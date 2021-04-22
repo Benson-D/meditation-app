@@ -20,6 +20,8 @@ const timer = document.querySelector('.countDown');
 let startTime = 300;
 
 ///////Functions
+
+//Menu Home Page
 const display = function (entries) {
   const [entry] = entries;
 

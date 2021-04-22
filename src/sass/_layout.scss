@@ -93,6 +93,34 @@
   }
 }
 
+@media only screen and (min-width: 48.8em) {
+  //780.8px
+
+  .bg-video {
+    height: 45rem;
+  }
+
+  .headline--1,
+  .headline--2 {
+    height: 35rem;
+    width: 38rem;
+  }
+
+  .meditate {
+    &__select {
+      &:hover {
+        transform: translateY(-2rem);
+      }
+    }
+
+    &__title {
+      &:hover {
+        background-color: hsl(29, 100%, 45%);
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 41.8em) and (min-width: 18.75em) {
   .headline--2 {
     display: none;
