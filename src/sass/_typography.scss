@@ -1,0 +1,102 @@
+.header {
+  background-color: $color-primary;
+
+  &__logo {
+    font-size: 2.3rem;
+  }
+}
+
+//Main Section
+.headline {
+  color: $color-secondary;
+
+  & > * {
+    background-color: hsla(0, 0%, 87%, 0.91);
+    text-align: center;
+  }
+
+  &--1 {
+    font-size: 1.3rem;
+    line-height: 2.1;
+  }
+
+  &--emphasis {
+    background: -webkit-linear-gradient(#1f6bc2, #158eff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &--2 {
+    font-size: 1.1rem;
+
+    & > * {
+      font-weight: 300;
+      line-height: 1.6;
+    }
+  }
+}
+
+//Themes
+.meditate {
+  background-color: $color-primary;
+
+  &__title {
+    background-color: #ffc16e;
+    font-size: 2.1rem;
+    height: 4rem;
+    text-align: center;
+  }
+}
+
+///////////Queries
+@media only screen and (max-width: 31.25em) and (min-width: 18.75em) {
+  .meditate__title {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 41.8em) {
+  //668.8px
+  .header__logo {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .headline--1,
+  .headline--2 {
+    width: 33rem;
+  }
+
+  .headline--1 {
+    font-size: 1.7rem;
+  }
+
+  .headline--2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 48.8em) {
+  //780.8px
+  .header__logo {
+    font-size: 3.8rem;
+  }
+
+  .headline--1 {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+  }
+
+  .headline--2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  //1024px
+  .header__logo {
+    font-size: 6.2rem;
+  }
+}

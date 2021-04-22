@@ -1,0 +1,153 @@
+@mixin photo-size {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5.2rem;
+  }
+}
+
+////////Main Section
+.bg-video {
+  height: 35rem;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.58;
+    z-index: -1;
+  }
+}
+
+.headline {
+  display: flex;
+  justify-content: space-evenly;
+
+  & > * {
+    margin-top: 5.2rem;
+    padding: 3rem 3rem;
+  }
+
+  &--1,
+  &--2 {
+    width: 21rem;
+    height: 28rem;
+  }
+}
+
+//////////Themes
+
+.meditate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+  padding: 5rem 0;
+
+  &__select {
+    width: 40rem;
+    transition: all 0.5s;
+
+    & > * {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__images {
+    @include photo-size();
+  }
+}
+
+///////////Queries
+@media only screen and (max-width: 31.25em) and (min-width: 18.75em) {
+  .headline--1 {
+    margin-top: 7rem;
+    width: 31rem;
+    height: 20rem;
+  }
+
+  .meditate {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    &__select {
+      width: 20rem;
+    }
+
+    &__title {
+      height: 1.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 41.8em) and (min-width: 18.75em) {
+  .headline--2 {
+    display: none;
+  }
+
+  .headline--1 {
+    margin-top: 7rem;
+    width: 35rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 48.8em) {
+  //780.8px
+
+  .bg-video {
+    height: 45rem;
+  }
+
+  .headline--1,
+  .headline--2 {
+    height: 35rem;
+    width: 38rem;
+  }
+
+  .meditate {
+    &__select {
+      &:hover {
+        transform: translateY(-2rem);
+      }
+    }
+
+    &__title {
+      &:hover {
+        background-color: hsl(29, 100%, 45%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 58.12em) {
+  //929.9px
+  .header {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  //1024px
+  .meditate {
+    grid-template-columns: repeat(auto-fit, minmax(52rem, 1fr));
+    grid-gap: 3.5rem;
+
+    &__select {
+      width: 52rem;
+    }
+  }
+}

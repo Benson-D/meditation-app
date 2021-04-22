@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>River Theme</title>
+    <link rel="icon" href="/img/icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <script defer src="/src/js/river.js"></script>
+  </head>
+  <body class="themes">
+    <nav class="mobile">
+      <li>
+        <a class="mobile__link" href="/index.html" class="menu__link">Home</a>
+      </li>
+    </nav>
+    <div class="menu">
+      <input type="checkbox" class="menu__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="menu__button">
+        <span class="menu__icon">&nbsp;</span>
+      </label>
+      <div class="menu__background">&nbsp;</div>
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__items">
+            <a href="/index.html" class="menu__link">Home</a>
+          </li>
+          <li class="menu__items">
+            <a href="/src/html/wind.html" class="menu__link">Wind</a>
+          </li>
+          <li class="menu__items">
+            <a href="/src/html/river.html" class="menu__link">River</a>
+          </li>
+          <li class="menu__items">
+            <a href="/src/html/nature.html" class="menu__link">Nature</a>
+          </li>
+          <li class="menu__items">
+            <a href="/src/html/ocean.html" class="menu__link">Ocean</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header">
+      <div class="header__logo">
+        <h3>Simple Life</h3>
+        <img src="/img/meditate.png" alt="meditate" />
+      </div>
+    </div>
+    <section class="bkgrd__image--2">
+      <div class="timer">
+        <label class="timer__head" for="timer">Select Time</label>
+        <select class="timer__select" name="time-select" id="timer">
+          <option data-time="300" value="300">5 minutes</option>
+          <option data-time="600" value="600">10 minutes</option>
+          <option data-time="900" value="900">15 minutes</option>
+          <option data-time="1200" value="1200">20 minutes</option>
+          <option data-time="1800" value="1800">30 minutes</option>
+        </select>
+      </div>
+      <h4 class="countDown">0:00</h4>
+    </section>
+    <section class="control">
+      <button class="control__buttons back">
+        <svg class="conrol__buttons--back">
+          <use href="/img/sprite.svg#icon-previous2"></use>
+        </svg>
+      </button>
+      <button class="control__buttons play">
+        <audio class="audio-selection">
+          <source src="/audio/AHiddenStream.mp3" type="audio/mpeg" />
+          <source src="/audio/AHiddenStream.ogg" type="audio/ogg" />
+          Your browser is not supported!
+        </audio>
+        <svg class="control__buttons--play" alt="play-button">
+          <use href="/img/sprite.svg#icon-play2"></use>
+        </svg>
+        <svg class="control__buttons--pause display" alt="pause-button">
+          <use href="/img/sprite.svg#icon-pause"></use>
+        </svg>
+      </button>
+      <button class="control__buttons next">
+        <svg class="control__buttons--next">
+          <use href="/img/sprite.svg#icon-next2"></use>
+        </svg>
+      </button>
+    </section>
+  </body>
+</html>

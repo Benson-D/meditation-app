@@ -1,0 +1,135 @@
+//Theme background images
+@mixin bkgrd-image {
+  height: 85vh;
+  background-position: center;
+  background-size: cover;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/////////Theme links
+.bkgrd__image--1 {
+  @include bkgrd-image();
+  background-image: url(/img/wind.jpg);
+}
+
+.bkgrd__image--2 {
+  @include bkgrd-image();
+  background-image: url(/img/river.jpg);
+}
+
+.bkgrd__image--3 {
+  @include bkgrd-image();
+  background-image: url(/img/nature.jpg);
+}
+
+.bkgrd__image--4 {
+  @include bkgrd-image();
+  background-image: url(/img/ocean.jpg);
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 20rem;
+  width: 35rem;
+  border: 8px solid $color-text;
+  border-radius: 15px;
+  box-shadow: $shadow-fade;
+
+  &__head {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-shadow: $shadow-fade;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  &__select {
+    background-image: $color-gradient;
+    font-family: inherit;
+    font-size: 1.65rem;
+    color: $color-text;
+    height: 4rem;
+    width: 20rem;
+    text-align-last: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    align-self: center;
+    outline: none;
+  }
+}
+
+.countDown {
+  font-size: 3.1rem;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+//Buttons
+.control {
+  background-image: $color-gradient;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__buttons {
+    background-image: $color-gradient;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    display: inline-block;
+
+    & > * {
+      width: 5rem;
+      height: 5rem;
+      fill: $color-text;
+      transition: 0.05s;
+      border-radius: 50%;
+
+      &:hover {
+        box-shadow: $shadow-fade;
+      }
+
+      &:active {
+        background-color: $color-primary;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    }
+  }
+}
+
+///////////Queries
+@media only screen and (max-width: 31.25em) and (min-width: 18.75em) {
+  .timer {
+    width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 63.75em) {
+  .control {
+    padding: 2.3rem;
+
+    &__buttons {
+      & > * {
+        width: 7.8rem;
+        height: 7.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  //1024px
+  .timer {
+    width: 40rem;
+  }
+}
