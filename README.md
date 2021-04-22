@@ -3,6 +3,6 @@ Front-end vanilla JavaScript app for meditation. There are a variety of themes t
 
 ##Keyboard Shortcuts
 
-- Arrow right - Switch over to next theme.
-- Arrow left - Switch back to next theme.
-- Space bar - Play and pause audio.
++Arrow right - Switch over to next theme.
++Arrow left - Switch back to next theme.
++Space bar - Play and pause audio.
