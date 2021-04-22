@@ -105,34 +105,6 @@
   }
 }
 
-@media only screen and (min-width: 48.8em) {
-  //780.8px
-
-  .bg-video {
-    height: 45rem;
-  }
-
-  .headline--1,
-  .headline--2 {
-    height: 35rem;
-    width: 38rem;
-  }
-
-  .meditate {
-    &__select {
-      &:hover {
-        transform: translateY(-2rem);
-      }
-    }
-
-    &__title {
-      &:hover {
-        background-color: hsl(29, 100%, 45%);
-      }
-    }
-  }
-}
-
 @media only screen and (min-width: 58.12em) {
   //929.9px
   .header {
