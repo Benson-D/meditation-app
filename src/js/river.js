@@ -1,6 +1,3 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
-
 //Control Audio
 const playBtn = document.querySelector('.play');
 const nextBtn = document.querySelector('.next');
@@ -64,7 +61,7 @@ nextBtn.addEventListener(
 
 backBtn.addEventListener(
   'click',
-  () => (location.href = 'http://localhost:1234/src/html/wind.html')
+  () => (location.href = 'http://localhost:1234/src/html/index.html')
 );
 
 document.addEventListener('keydown', function (e) {
@@ -73,7 +70,7 @@ document.addEventListener('keydown', function (e) {
   }
 
   if (e.key === 'ArrowLeft') {
-    location.href = 'http://localhost:1234/src/html/wind.html';
+    location.href = 'http://localhost:1234/src/html/index.html';
   }
 
   if (e.key === ' ') {

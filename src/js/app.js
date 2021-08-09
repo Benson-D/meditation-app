@@ -1,6 +1,3 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
-
 //Home
 const menu = document.querySelector('.menu');
 const section1 = document.querySelector('.section-main');

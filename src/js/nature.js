@@ -1,6 +1,3 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
-
 //Control Audio
 const playBtn = document.querySelector('.play');
 const nextBtn = document.querySelector('.next');

@@ -16,22 +16,6 @@
 }
 
 ////////Main Section
-.bg-video {
-  height: 35rem;
-  position: relative;
-
-  &__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.58;
-    z-index: -1;
-  }
-}
-
 .headline {
   display: flex;
   justify-content: space-evenly;
@@ -45,30 +29,6 @@
   &--2 {
     width: 21rem;
     height: 28rem;
-  }
-}
-
-//////////Themes
-
-.meditate {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  grid-gap: 3rem;
-  justify-items: center;
-  padding: 5rem 0;
-
-  &__select {
-    width: 40rem;
-    transition: all 0.5s;
-
-    & > * {
-      text-decoration: none;
-      color: inherit;
-    }
-  }
-
-  &__images {
-    @include photo-size();
   }
 }
 
